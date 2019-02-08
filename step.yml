@@ -64,17 +64,39 @@ toolkit:
 
 
 inputs:
-  - example_step_input: Default Value - you can leave this empty if you want to
+  - organization:
     opts:
-      title: "Example Step Input"
-      summary: Summary. No more than 2-3 sentences.
+      title: "The organization slug"
+      summary: The organization slug
       description: |
-        Description of this input.
-
-        Can be Markdown formatted text.
+        The organization slug
       is_expand: true
       is_required: true
-      value_options: []
+  - project:
+    opts:
+      title: "The project slug"
+      summary: The project slug
+      description: |
+        The project slug
+      is_expand: true
+      is_required: true
+  - auth_token:
+    opts:
+      title: "The auth token"
+      summary: The auth token
+      description: |
+        The auth token
+      is_expand: true
+      is_required: true
+      is_sensitive: true
+  - dsyms_path:
+    opts:
+      title: "Path to dSYMs"
+      summary: The path to dSYMs directory
+      description: |
+        The path to dSYMs directory
+      is_expand: true
+      is_required: true
 
 outputs:
   - EXAMPLE_STEP_OUTPUT:
